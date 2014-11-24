@@ -3,7 +3,7 @@ include device/sony/blue-common/BoardConfigCommon.mk
 
 TARGET_SPECIFIC_HEADER_PATH += device/sony/tsubasa/include
 
-TARGET_KERNEL_CONFIG := cm_blue_tsubasa_defconfig
+TARGET_KERNEL_CONFIG := mokee_blue_tsubasa_defconfig
 
 # Partition information
 BOARD_VOLD_MAX_PARTITIONS := 18
@@ -25,7 +25,7 @@ TARGET_USERIMAGES_USE_EXT4 := true
 
 TARGET_OTA_ASSERT_DEVICE := LT25i,tsubasa
 
-BOARD_HARDWARE_CLASS := device/sony/tsubasa/cmhw
+BOARD_HARDWARE_CLASS := device/sony/tsubasa/mkhw
 
 # inherit from the proprietary version
 -include vendor/sony/tsubasa/BoardConfigVendor.mk
